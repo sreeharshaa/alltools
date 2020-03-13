@@ -1,0 +1,9 @@
+---
+- hosts: RHEL
+  tasks: 
+	- name: exe comm
+    shell: free -m
+    register: a   
+	- debug:
+     msg: "{{a.stdout}}"
+ 

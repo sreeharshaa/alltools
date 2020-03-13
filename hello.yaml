@@ -1,0 +1,9 @@
+---
+- hosts: RHEL
+  vars:
+       x: "hello"  
+  tasks:
+  - name: exe comm
+    shell: touch file.txt
+    when: x=="hello" 
+ 

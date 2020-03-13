@@ -1,0 +1,8 @@
+---
+- hosts: RHEL
+  tasks: 
+  - name: exe comm
+    include_vars: variable.yaml 
+  - name: exe comm
+    copy: src={{x}} dest={{y}}
+ 

@@ -1,0 +1,6 @@
+---
+- hosts: RHEL
+  tasks: 
+  - name: exe com
+    shell: mkdir /home/jenkins/file12x34
+    with_sequence: count=3

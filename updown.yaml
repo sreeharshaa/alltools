@@ -1,0 +1,6 @@
+---
+- hosts: RHEL
+  tasks: 
+  - name: exe comm
+    shell: touch file{{item}}.txt
+    with_items: item{10,20,30}

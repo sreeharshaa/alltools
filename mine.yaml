@@ -1,0 +1,9 @@
+---
+- hosts: RHEL
+  vars: 
+     x: /home/jenkins/file1
+     y: /home/jenkins
+  tasks: 
+  - name: exe comm
+    copy: src={{x}} dest={{y}}
+ 

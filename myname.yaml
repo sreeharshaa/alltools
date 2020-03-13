@@ -1,0 +1,8 @@
+---
+- hosts: RHEL
+  vars: 
+     a: "{{x}}"
+     b: "{{y}}"
+  tasks: 
+  - name: exe comm
+    copy: src={{a}} dest={{b}}

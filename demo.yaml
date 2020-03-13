@@ -1,0 +1,6 @@
+---
+- hosts: RHEL
+  tasks: 
+  - name: exe comm
+    shell: mkdir /home/jenkins/file123
+ 

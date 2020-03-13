@@ -1,0 +1,9 @@
+---
+- hosts: RHEL
+  tasks: 
+  - name: memory
+    shell: free -m
+    register: a
+  - name: print
+    debug:
+    msg: "{{a.stdout}}"

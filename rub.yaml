@@ -1,0 +1,5 @@
+---
+- hosts: RHEL
+  tasks: 
+  - name: exe comm
+    copy: src=/home/jenkins/jenkins dest=/home/jenkins 
